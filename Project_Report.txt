@@ -1,0 +1,32 @@
+Project's Report - Design team:
+-------------------------------
+Abstract
+
+1. Introduction
+   1.1. K-Means Algorithm
+   1.2. AMBA APB
+   1.3. Paper study
+  
+2. KMeans Accelerator Implementation
+   2.1. Block diagram
+   2.2. Block description (+flow-chart)
+   2.3. Pins description
+   2.4. Clocks and Resets
+   2.5. Interfaces description
+   2.6. Sub-units description
+   2.7. Synthesis
+	2.7.1. Technology and Constrains (SDC)
+        2.7.2. FloorPlan
+        2.7.3. Area and StaticPower
+   2.8. Zero-order ("aliveness") verification
+   2.9. Programmer’s Guide
+  
+ 3. Summary
+   (-) Project's summary
+   (-) Take message home
+   (-) Next steps
+ 
+ References
+ 
+ 
+ Note:  Project's Presentation should have a similar structure, but much more dense.
