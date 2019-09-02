@@ -1,0 +1,24 @@
+{signal: [
+  ['regfile_stub_IF',
+     {name: 'apb_st', wave: '3.43.', data: ['setup', 'read', 'setup','read', 'setup']},
+   ['input_from_stub',
+    
+    {name: 'pCLK', wave: 'p....'},
+    {name: 'pRESETn', wave: '0h...'},
+    
+    {name: 'pADDR',wave: '03.x.', data: ['reg_addr']},
+    {name: 'pWRITE',wave: 'x0...'},
+    {name: 'pSELX',wave: '01..0'},
+    {name: 'pENABLE',wave: '0.10.'},
+    {name: 'pWDATA', wave: 'x....', data: []},
+   ],
+   ['output_to_stub',
+    {name: 'pRDATA',wave: '0.30.', data: ['rd_data']},
+    {name: 'pREADY',wave: '0.10.'},
+    {name: 'pSLVERR',wave: '0....'},
+   ],
+ ],
+],
+  "config" : {"hscale" : 3}
+  }
+  

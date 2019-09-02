@@ -1,0 +1,112 @@
+/*------------------------------------------------------------------------------
+ * File          : k_means_top.sv
+ * Project       : MLProject
+ * Author        : epedlh
+ * Creation date : Aug 21, 2019
+ * Description   :
+ *------------------------------------------------------------------------------*/
+
+module k_means_top
+#(
+  addrWidth = 8,
+  dataWidth = 32
+)
+(
+        //APB signals
+  input                        clk,
+  input                        rst_n,
+  input        [addrWidth-1:0] paddr,
+  input                        pwrite,
+  input                        psel,
+  input                        penable,
+  input        [dataWidth-1:0] pwdata,
+  output logic [dataWidth-1:0] prdata,
+  output                                   pready
+
+
+
+);
+
+        logic [dataWidth-1:0] regFile [256];
+        enum logic [7:0]{interupt,go,cent_1,cent_2,cent_3,cent_4,cent_5,cent_6,cent_7,cent_8,RAM_addr_reg,RAM_data_reg} register_num;
+
+        enum logic      [1:0] {SETUP, W_ENABLE, R_ENABLE} apb_st;
+        reg [addrWidth-1:0] last_paddr ;
+
+
+        wire logic [dataWidth-1:0] RAM_adress;
+        wire logic [dataWidth-1:0] RAM_data;
+        wire logic                         Go;
+        wire logic                 W_R_RAM;
+        wire logic [addrWidth-1:0] Reg_addr_from_core;
+        wire logic                 Reg_w_r_from_core;
+// ----------------------------------------------------------------------
+//                   Instantiation
+// ----------------------------------------------------------------------
+K_means_core core
+(.clk(clk),.rst_n(rst_n),.RAM_adress(RAM_adress),.RAM_data(RAM_data),.W_R_RAM(W_R_RAM),.Go(Go),.Reg_adress(Reg_addr_from_core),.Reg_w_r(Reg_w_r_from_core));
+
+// indirect access read or write process
+always @(negedge rst_n or posedge clk) begin
+  if (rst_n == 0) begin
+        apb_st <= SETUP;
+        prdata <= 0;
+        pready<=1'b0;
+  end
+
+  else begin
+        case (apb_st)
+          SETUP : begin
+                // clear the prdata
+                prdata <= 0;
+                pready<=1'b0;
+
+                //if register written to is RAM_data_reg then the RAM_addr_reg was
+already updated. Therefore,
+                if (last_paddr==RAM_data_reg) begin
+                        RAM_adress<=regFile[RAM_addr_reg];
+                        RAM_data<=regFile[RAM_data_reg];//pwdata is now DATA to write to RAM
+                        W_R_RAM<=1'b1;
+                end
+
+                // Move to ENABLE when the psel is asserted
+                if (psel && !penable) begin
+                  if (pwrite) begin
+                        apb_st <= W_ENABLE;
+
+                  end
+
+                  else begin
+                        apb_st <= R_ENABLE;
+
+                  end
+                end
+          end
+
+          W_ENABLE : begin
+                // write pwdata to memory
+                if (psel && penable && pwrite) begin
+                        regFile[paddr] <= pwdata;
+                        pready<=1'b1;
+                        last_paddr <= paddr;
+                        apb_st <= SETUP;// return to SETUP
+
+                end
+
+           end
+
+          R_ENABLE : begin
+                // read prdata from memory
+                if (psel && penable && !pwrite) begin
+                  prdata <=  regFile[paddr];
+                  pready<=1'b1;
+                  apb_st <= SETUP;// return to SETUP
+                end
+
+          end
+        endcase
+  end
+end
+
+
+endmodule
