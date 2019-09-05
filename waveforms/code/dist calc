@@ -1,0 +1,48 @@
+{signal: [
+ 
+  {name: 'clock', wave:'p............'},
+   ['centroid registers signals',
+    
+
+    {name: 'centroid en 1', wave: '010..........'},
+    {name: 'centroid reg 1', wave: 'x.2..........', data: ['10']},
+    {name: 'centroid en 2', wave: '0.10.........'},
+    {name: 'centroid reg 2', wave: 'x..3.........', data: ['20']},
+    {name: 'centroid en 3', wave: '0..10........'},
+    {name: 'centroid reg 3', wave: 'x...4........', data: ['30']},
+    {name: 'centroid en 4', wave: '0...10.......'},
+    {name: 'centroid reg 4', wave: 'x....5.......', data: ['40']},
+    {name: 'centroid en 5', wave: '0....10......'},
+    {name: 'centroid reg 5', wave: 'x.....2......',data: ['50']},
+    {name: 'centroid en 6', wave: '0.....10.....'},
+    {name: 'centroid reg 6', wave: 'x......3.....',data: ['60']},
+    {name: 'centroid en 7', wave: '0......10....'},
+    {name: 'centroid reg 7', wave: 'x.......4....',data: ['70']},
+    {name: 'centroid en 8', wave: '0.......10...'},
+    {name: 'centroid reg 8', wave: 'x........5...',data: ['80']},
+  	{name: 'input reg en', wave: '0........1010' },
+],
+    [
+      {name: 'input point', wave:'5.........5..',data: ['0','100']}
+    ],
+['output signals',    
+    {name: 'dist1', wave: 'x.........2.2', data: ['10','90']},
+    {name: 'idx1', wave: '2............', data: ['1']},
+    {name: 'dist2', wave: 'x.........3.3', data: ['20','80']},
+    {name: 'idx2', wave: '3............', data: ['2']},
+    {name: 'dist3', wave: ' x........4.4', data: ['30','70']},
+    {name: 'idx3', wave: '4............', data: ['3']},
+    {name: '...', wave: ' x........4.4', data: ['other distances', 'other distances']},
+    {name: '...', wave: '4............', data: ['other index']},
+ 
+
+
+   ],
+    
+ 
+ 
+],
+  "config" : {"hscale" : 3},
+
+    }
+  
