@@ -1,0 +1,47 @@
+{signal: [
+  ['regfile_stub_IF',
+   {name: 'pCLK', wave: 'p....'},
+   {name: 'index',wave: 'x5...', data: ['2']},
+   ['accumulators',
+    
+    {name: 'input_point',wave: 'x5...', data: ['-1.53']},
+    {name: 'accumulators_en',wave: '01.....',period:0.75},
+    
+    {name: 'accumulator_reg1',wave: '3....',data:['701.32']},
+    {name: 'accumulator_reg2',wave: '3.5..',data:['451.53','450']},
+    {name: 'accumulator_reg3',wave: '3....',data:['1001.11']},
+    {name: '...',wave: '4....',data:['accumulator registers 4 to 8']},
+    
+    {name: 'ADDER_entr1_acc',wave: '3....',data:['0']},
+    {name: 'ADDER_entr2_acc',wave: '353..',data:['0','-1.53','0']},
+    {name: 'ADDER_entr3_acc',wave: '3....',data:['0']},
+    {name: '...',wave: '4....',data:['ADDER_entrrance_accumlators 4 to 8']},
+    //{name: 'accumulator_reg4',wave: '01..0'},
+    //{name: 'accumulator_reg5',wave: '01..0'},
+    //{name: 'accumulator_reg6',wave: '01..0'},
+    //{name: 'accumulator_reg7',wave: '01..0'},
+   // {name: 'accumulator_reg8',wave: '01..0'},
+   ],
+    ['counters registers',
+    {name: '1',wave: '2....',data:['1 value']},
+    {name: 'counter_reg1',wave: '3....',data:['130']},
+    {name: 'counter_reg2',wave: '3.5..',data:['17','18']},
+    {name: 'counter_reg3',wave: '3....',data:['74']},
+     {name: '...',wave: '4....',data:['counter registers 4 to 8']},
+    {name: 'ADDER_entr1_cnt',wave: '3....',data:['0','1']},
+    {name: 'ADDER_entr2_cnt',wave: '353..',data:['0','1','0']},
+    {name: 'ADDER_entr3_cnt',wave: '3....',data:['0']},
+     {name: '...',wave: '4....',data:['ADDER_entrrance_counters 4 to 8']},
+     
+   // {name: 'counter_reg4',wave: '01..0'},
+    //{name: 'counter_reg5',wave: '01..0'},
+  //  {name: 'counter_reg6',wave: '01..0'},
+   // {name: 'counter_reg7',wave: '01..0'},
+    //{name: 'counter_reg8',wave: '01..0'},
+    
+   ],
+ ],
+],
+  "config" : {"hscale" : 3}
+  }
+  

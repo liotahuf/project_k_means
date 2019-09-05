@@ -1,0 +1,44 @@
+{signal: [
+  ['regfile_stub_IF',
+   {name: 'apb_st', wave: '3.4343x', data: ['setup', 'write', 'setup','write', 'setup']},
+ ['input_from_stub',
+  
+  {name: 'pCLK', wave: 'p......'},
+  {name: 'pRESETn', wave: '0h.....'},
+  
+  {name: 'pADDR',wave: '03.3.x.', data: ['RAM_addrReg','RAMdataReg']},
+  {name: 'pWRITE',wave: '01...0.'},
+  {name: 'pSELX',wave: '01...0.'},
+  {name: 'pENABLE',wave: '0.1010.'},
+  {name: 'pWDATA', wave: '05.5.x.', data: ['RAM_addr','RAM_data']},
+ ],
+ ['output_to_stub',
+  {name: 'pRDATA',wave: '0......'},
+  {name: 'pREADY',wave: '0.1010.'},
+  {name: 'pSLVERR',wave: '0......'},
+ ],
+  ],
+  
+    ['kMeansCore_regfile_IF',
+ ['input_from_reg_file',
+  
+  {name: 'pCLK', wave: 'p......'},
+  {name: 'pRESETn', wave: '01.....'},
+  
+  {name: 'go',wave: '0......'},
+  
+  {name: 'RAM_rd_wr',wave: '0....10'},
+  {name: 'RAM_addr',wave: 'x....3x',  data: ['RAM_addr']},
+  {name: 'RAM_data',wave: 'x....3x',data: ['RAM_data']},
+ ],
+ ['output_to_regfile',
+  {name: 'wr_DATA',wave: '0......'},
+  {name: 'regfile_addr',wave: 'x......'},
+  {name: 'regfile_wr_rd',wave: 'x......'},
+ ],
+  ],
+  
+],
+  "config" : {"hscale" : 2}
+  }
+  

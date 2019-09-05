@@ -1,0 +1,52 @@
+{signal: [
+ 
+   
+   ['input_distances',
+    
+    {name: 'dist1', wave: '2...', data: ['10']},
+    {name: 'idx1', wave: '2...', data: ['1']},
+    {name: 'dist2', wave: '3...', data: ['20']},
+    {name: 'idx2', wave: '3...', data: ['2']},
+    {name: 'dist3', wave: '4...', data: ['30']},
+    {name: 'idx3', wave: '4...', data: ['3']},
+    {name: 'dist4', wave: '5...', data: ['40']},
+    {name: 'idx4', wave: '5...', data: ['4']},
+    {name: 'dist5', wave: '2...', data: ['50']},
+    {name: 'idx5', wave: '2...', data: ['1']},
+    {name: 'dist1', wave: '3...', data: ['60']},
+    {name: 'idx2', wave: '3...', data: ['6']},
+    {name: 'dist7', wave: '4...', data: ['70']},
+    {name: 'idx7', wave: '4...', data: ['7']},
+    {name: 'dist8', wave: '5...', data: ['80']},
+    {name: 'idx8', wave: '5...', data: ['8']},
+
+
+   ],
+    ['internal signals  ',
+     {name: 'min_dist1',wave: 'x2..',data : ['10']},
+     {name: 'min_idx1', wave: 'x2..', data: ['1']},
+     {name: 'min_dist2',wave: 'x4..',data : ['30']},
+     {name: 'min_idx2', wave: 'x4..', data: ['3']},
+     {name: 'min_dist3',wave: 'x2..',data : ['50']},
+     {name: 'min_idx3', wave: 'x2..', data: ['5']},
+     {name: 'min_dist4',wave: 'x4..',data : ['70']},
+     {name: 'min_idx4', wave: 'x4..', data: ['7']},
+    
+     {name: 'min_dist5',wave: 'x.2.',data : ['10']},
+     {name: 'min_idx5', wave: 'x.2.', data: ['1']},
+     {name: 'min_dist6',wave: 'x.2.',data : ['50']},
+     {name: 'min_idx6', wave: 'x.2.', data: ['5']},
+    ],
+     
+   ['output_index',
+    {},
+    {name: 'index',wave: 'x..2', data: ['1']},
+    {}
+
+   ],
+ 
+],
+  "config" : {"hscale" : 3},
+
+    }
+  
