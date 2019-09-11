@@ -1,0 +1,75 @@
+{signal: [
+ 
+  {name: 'clock', wave:'p.........................................'},
+  
+  ['reg file to ctrler',
+  {},
+ 
+  {name: 'Go', wave: 'x10...........'},
+  {name: 'Reg read data', wave: '0..........',data:[""]},
+  
+   {},
+
+],
+  ['crtler to reg file',
+  
+   {},
+   {name: 'Reg write', wave: '0..........'},
+   {name: 'Reg write data', wave: 'x..........',data:[""]},
+   {name: 'Reg num', wave: '3..........',data:["centroid cnt"]},
+   
+   {},
+
+],
+   ['contrller internal signals',
+    {},{},
+
+    {name: 'centroid cnt', wave: '2.2.2|2.........',data:["1",'2','3','8']},
+    {name: 'points cnt', wave: '3......3333|3x..........',data:["0",'1','2','3','4','total points']},
+    {name: 'fill pipe cnt', wave: 'x......4444|..444.......',data:["0",'1','2','3','2','1',	"0",]},
+    {},{},
+
+],
+
+['controller to Class Block',    
+    {name: 'centroid reg 1 en', wave: '0.10............', },
+    {name: 'centroid reg 2 en', wave: '0..10...........', },
+    {name:'...',wave:'3....|0........', data: ['other centroids en']},
+    {name: 'RAM W/R', wave: '0.....1....|....',},
+    {name: 'RAM ADDR', wave: 'x.....3....|3.............', data: ['First RAM ADDR + point cnt','Last RAM ADDR']},
+    {name: 'Accu reset', wave: '1.....0........', },
+    {name: 'Accu en', wave: '0......1...|....', },
+   ],
+    ['controller to NewMeans',    
+     {}, {},  {},
+     {name: 'divider start en', wave: '0.......p...',period:'2' },
+    {name:'centroid cnt',wave:'3............................', data: ['centroids cnt']},
+ {}, {},
+   ],
+    ['controller to ConvCheck',    
+    {},   
+    {name: 'thershold en', wave: '0.........', },
+    {name: 'centroid cnt', wave: '0.........', },
+	{},  {},
+     ],
+     
+    ['NewMeans to crtler',    
+    {}, {},  
+    {name: 'complete', wave: '0.....................................', },
+	{},  {},
+     ],
+     
+    ['ConvCheck to crtler',    
+    {}, {},  
+    {name: 'has converged', wave: '0.........', },
+	{},  {},
+     ],
+     [
+       {name : 'interrupt', wave : '0........'}
+     ],
+ 
+],
+  "config" : {"hscale" : 3},
+
+    }
+  

@@ -1,0 +1,67 @@
+{signal: [
+ 
+  {name: 'clock', wave:'p.........'},
+  
+  ['reg file to ctrler',
+  {},
+ 
+  {name: 'Go', wave: '0.........'},
+  {name: 'Reg read data', wave: 'x.........',data:[""]},
+  
+   {},
+
+],
+  ['crtler to reg file',
+  
+   {},
+   {name: 'Reg write', wave: 'lp........'},
+   {name: 'Reg write data', wave: 'x5555|5x..',data:["new centroid 8","new centroid 7", "new centroid 6","...","new centroid 1"]},
+   {name: 'Reg num', wave: '3.........',data:["centroid cnt"]},
+   
+   {},
+
+],
+   ['contrller internal signals',
+    {},{},
+
+    {name: 'centroid cnt', wave: '2222|22...',data:['8','7','6','..','1','0']},
+    {name: 'points cnt', wave: '3.........',data:['total points']},
+    {name: 'fill pipe cnt', wave: '4.........',data:["0"]},
+    {},{},
+
+],
+
+
+    ['controller to NewMeans',    
+     {}, {},  {},
+     {name: 'divider start en', wave: 'p....',period:'2' },
+    {name:'centroid cnt',wave:'3.........', data: ['centroids cnt']},
+ {}, {},
+   ],
+    ['controller to ConvCheck',    
+    {},   
+    {name: 'thershold en', wave: '01....0...', },
+    {name: 'centroid cnt', wave:'3.........', data: ['centroids cnt'] },
+	{},  {},
+     ],
+     
+    ['NewMeans to crtler',    
+    {}, {},  
+     {name: 'complete', wave: 'n....',period:'2',skew:'1' },
+	{},  {},
+     ],
+     
+    ['ConvCheck to crtler',    
+    {}, {},  
+    {name: 'has converged', wave: '0......10.', },
+	{},  {},
+     ],
+     [
+       {name : 'interrupt', wave : '0.......1.'}
+     ],
+ 
+],
+  "config" : {"hscale" : 3},
+
+    }
+  
