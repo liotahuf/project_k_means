@@ -1,0 +1,100 @@
+    24	18:29	vcs -debug_all -debug -sverilog -full64 /users/epedlh/Project/classify_block_pipe1.sv /users/epedlh/Project/tb_classify_block.sv /users/epedlh/Project/classification_block.sv /users/epedlh/Project/classify_block_pipe2.sv /users/epedlh/Project/classify_block_pipe3.sv /users/epedlh/Project/distance_calc.sv /users/epedlh/Project/demux.sv
+    25	18:29	vlogan -debug -sverilog -full64 /users/epedlh/Project/classify_block_pipe1.sv /users/epedlh/Project/tb_classify_block.sv /users/epedlh/Project/classification_block.sv /users/epedlh/Project/classify_block_pipe2.sv /users/epedlh/Project/classify_block_pipe3.sv /users/epedlh/Project/distance_calc.sv /users/epedlh/Project/demux.sv /users/epedlh/Project/accumulator_adder.sv
+    26	18:29	vcs -debug_all -debug -sverilog -full64 /users/epedlh/Project/classify_block_pipe1.sv /users/epedlh/Project/tb_classify_block.sv /users/epedlh/Project/classification_block.sv /users/epedlh/Project/classify_block_pipe2.sv /users/epedlh/Project/classify_block_pipe3.sv /users/epedlh/Project/distance_calc.sv /users/epedlh/Project/demux.sv /users/epedlh/Project/accumulator_adder.sv
+    27	13:38	firefox
+    28	13:39	chrome
+    29	13:40	jobs
+    30	14:00	vlogan -debug -sverilog -full64 /users/epedlh/Project/classify_block_pipe1.sv /users/epedlh/Project/parsing_dividing.sv /users/epedlh/Project/parsing_dividing_tb.sv
+    31	14:02	vcs -debug_all -debug -sverilog -full64 /users/epedlh/Project/DW_div /users/epedlh/Project/parsing_dividing.sv /users/epedlh/Project/parsing_dividing_tb.sv
+    32	14:02	vcs -debug_all -debug -sverilog -full64 /users/epedlh/Project/DW_div.v /users/epedlh/Project/parsing_dividing.sv /users/epedlh/Project/parsing_dividing_tb.sv
+    33	14:06	vlogan -debug -full64 /users/epedlh/Project/DW_div.v
+    34	14:07	cd /epedlh
+    35	14:07	lcd DIV
+    36	14:07	cd DIV
+    37	14:09	vcs -debug_all -debug -sverilog -full64 /users/epedlh/Project/classify_block_pipe1.sv /users/epedlh/Project/parsing_dividing.sv /users/epedlh/Project/parsing_dividing_tb.sv
+    38	14:11	vlogan -debug -sverilog -full64 /users/epedlh/Project/parsing_dividing.sv /users/epedlh/Project/parsing_dividing_tb.sv
+    39	14:11	vcs -debug_all -debug -sverilog -full64 /users/epedlh/Project/parsing_dividing.sv /users/epedlh/Project/parsing_dividing_tb.sv
+    40	14:12	which vlogan
+    41	14:13	ls /tools/synopsys78/FEV
+    42	14:13	ls /tools/synopsys78/FEV/*syn*
+    43	14:13	find DW_div_function.inc /tools/synopsys78/FEV/*syn*
+    44	14:13	find /tools/synopsys78/FEV/*syn* -nem "DW_div_function.inc"
+    45	14:13	find /tools/synopsys78/FEV/*syn* -name "DW_div_function.inc"
+    46	14:14	ls /tools/synopsys78/FEV/syn_vN-2017.09-SP3/dw/sim_ver/DW_div_function.inc
+    47	14:14	history | grep -i "vlogan "
+    48	14:14	vi /users/epedlh/Project/DW_div.v
+    49	14:37	vlogan -debug -sverilog -full64 /users/epedlh/Project/classify_block_pipe*
+    50	14:38	vlogan -debug -sverilog -full64 /users/epedlh/Project/classify_block_pipe* /users/epedlh/Project/classification_block.sv
+    51	14:38	vlogan -debug -sverilog -full64 /users/epedlh/Project/classify_block_pipe* /users/epedlh/Project/classification_block.sv /users/epedlh/Project/distance_calc.sv /users/epedlh/Project/tb_classify_block.sv
+    52	14:38	vcs -debug -sverilog -full64 /users/epedlh/Project/classify_block_pipe* /users/epedlh/Project/classification_block.sv /users/epedlh/Project/distance_calc.sv /users/epedlh/Project/tb_classify_block.sv
+    53	14:39	vcs -debug -sverilog -full64 /users/epedlh/Project/classify_block_pipe* /users/epedlh/Project/classification_block.sv /users/epedlh/Project/distance_calc.sv /users/epedlh/Project/tb_classify_block.sv /users/epedlh/Project/demux.sv /users/epedlh/Project/accumulator_adder.sv
+    54	14:56	vlogan -debug -sverilog -full64 /users/epedlh/Project/classify_block_pipe* /users/epedlh/Project/classification_block.sv /users/epedlh/Project/distance_calc.sv /users/epedlh/Project/tb_classify_block.sv /users/epedlh/Project/demux.sv /users/epedlh/Project/accumulator_adder.sv
+    55	14:56	vcs -debug_all -debug -sverilog -full64 /users/epedlh/Project/parsing_dividing.sv /users/epedlh/Project/parsing_dividing_tb.sv /users/epedlh/Project/DW_div.v
+    56	14:58	vcs -debug -debug_all -sverilog -full64/users/epedlh/Project/parsing_dividing.sv /users/epedlh/Project/parsing_dividing_tb.sv /users/epedlh/Project/DW_div.v
+    57	15:04	cd ..
+    58	15:04	acroread /tools/synopsys78/FEV/syn_vN
+    59	15:04	-
+    60	15:04	2017.09
+    62	16:42	fg
+    63	17:00	vlogan -debug -sverilog -full64 /users/epedlh/Project/DW_div_inst.sv /users/epedlh/Project/DW_div.v
+    64	17:00	vcs -debug_all -debug -sverilog -full64 /users/epedlh/Project/DW_div_inst.sv /users/epedlh/Project/DW_div.v
+    65	17:15	vcs -debug -debug_all -sverilog -full64 /users/epedlh/Project/parsing_dividing.sv /users/epedlh/Project/parsing_dividing_tb.sv /users/epedlh/Project/DW_div.v
+    66	17:48	vlogan -debug -sverilog -full64 /users/epedlh/Project/parsing_dividing.sv /users/epedlh/Project/parsing_dividing_tb.sv /users/epedlh/Project/DW_div.v
+    67	17:49	vcs -debug -debug_all -sverilog -full64 /users/epedlh/Project/parsing_dividing.sv /users/epedlh/Project/parsing_dividing_tb.sv /users/epedlh/Project/DW_div.v/users/epedlh/Project/integer_to_fixed_point_and_concatenating.sv
+    68	18:03	vlogan -debug -sverilog -full64 /users/epedlh/Project/parsing_dividing.sv /users/epedlh/Project/parsing_dividing_tb.sv /users/epedlh/Project/DW_div.v /users/epedlh/Project/integer_to_fixed_point_and_concatenating.sv
+    69	18:03	vcs -debug -debug_all -sverilog -full64 /users/epedlh/Project/parsing_dividing.sv /users/epedlh/Project/parsing_dividing_tb.sv /users/epedlh/Project/DW_div.v /users/epedlh/Project/integer_to_fixed_point_and_concatenating.sv
+    70	19:03	vlogan -debug -sverilog -full64 /users/epedlh/Project/parsing_dividing.sv /users/epedlh/Project/parsing_dividing_tb.sv /users/epedlh/Project/DW_div.v /users/epedlh/Project/integer_to_fixed_point_and_concatenating.sv /users/epedlh/Project/tb_new_means_calculation.sv /users/epedlh/Project/
+    71	19:04	vlogan -debug -sverilog -full64 /users/epedlh/Project/parsing_dividing.sv /users/epedlh/Project/parsing_dividing_tb.sv /users/epedlh/Project/DW_div.v /users/epedlh/Project/integer_to_fixed_point_and_concatenating.sv /users/epedlh/Project/tb_new_means_calculation.sv
+    72	19:04	vcs -debug_all -debug -sverilog -full64 /users/epedlh/Project/parsing_dividing.sv /users/epedlh/Project/parsing_dividing_tb.sv /users/epedlh/Project/DW_div.v /users/epedlh/Project/integer_to_fixed_point_and_concatenating.sv /users/epedlh/Project/tb_new_means_calculation.sv
+    73	19:04	vlogan -debug -sverilog -full64 /users/epedlh/Project/parsing_dividing.sv /users/epedlh/Project/DW_div.v /users/epedlh/Project/integer_to_fixed_point_and_concatenating.sv /users/epedlh/Project/tb_new_means_calculation.sv
+    74	19:04	vcs -debug_all -debug -sverilog -full64 /users/epedlh/Project/parsing_dividing.sv /users/epedlh/Project/DW_div.v /users/epedlh/Project/integer_to_fixed_point_and_concatenating.sv /users/epedlh/Project/tb_new_means_calculation.sv
+    75	19:07	vlogan -debug -sverilog -full64 /users/epedlh/Project/parsing_dividing.sv /users/epedlh/Project/DW_div.v /users/epedlh/Project/integer_to_fixed_point_and_concatenating.sv /users/epedlh/Project/tb_new_means_calculation.sv /users/epedlh/Project/new_means_calculation_block.sv
+    76	19:08	vcs -debug_all -debug -sverilog -full64 /users/epedlh/Project/parsing_dividing.sv /users/epedlh/Project/DW_div.v /users/epedlh/Project/integer_to_fixed_point_and_concatenating.sv /users/epedlh/Project/tb_new_means_calculation.sv /users/epedlh/Project/new_means_calculation_block.sv
+    77	12:53	star_veride
+    78	17:55	vlogan -debug -sverilog -full64 /users/epedlh/Project/convergence_check_block.sv /users/epedlh/Project/tb_conv_check.sv
+    79	17:55	vcs -debug_all -debug -sverilog -full64 /users/epedlh/Project/convergence_check_block.sv /users/epedlh/Project/tb_conv_check.sv
+    80	15:06	pwd
+    81	15:07	l
+    83	14:34	simv -gui &
+    87	16:04	acroread /tools/kits/tower/PDK_TS18SL/RS160_Single_Port_SRAM_2003_12/tsl18/v3.0/doc/ds_tsl18rs160.pdf &
+    88	16:06	cd Project
+    89	16:06	cd
+    90	16:06	ls
+    91	16:06	ls */WS
+    92	16:06	ls -ld */WS
+    93	16:06	ls WS
+    94	16:06	/bin/rm -r WS
+    95	16:07	mkdir WS
+    96	16:07	cat start_veride
+    97	16:07	start_veride
+    98	18:27	cd design_sim
+    99	18:27	ll
+   100	18:30	firefox &
+   101	14:44	cd design_sim/
+   104	14:44	16814:43vcs -debug_all -debug -sverilog -full64 /users/epedlh/Project/RegFileTB.sv /users/epedlh/Project/RegFile.sv /users/epedlh/Project/controller.sv /users/epedlh/Project/spram512x50_cb.v
+   105	14:44	vlogan -debug -sverilog -full64 /users/epedlh/Project/RegFileTB.sv /users/epedlh/Project/RegFile.sv /users/epedlh/Project/controller.sv /users/epedlh/Project/spram512x50_cb.v
+   106	14:44	vcs -debug_all -debug -sverilog -full64 /users/epedlh/Project/RegFileTB.sv /users/epedlh/Project/RegFile.sv /users/epedlh/Project/controller.sv /users/epedlh/Project/spram512x50_cb.v
+   109	14:45	vlogan -debug -sverilog -full64 /users/epedlh/Project/tb_ram.sv /users/epedlh/Project/spram512x50_cb.v
+   110	14:46	vcs -debug_all -debug -sverilog -full64 /users/epedlh/Project/tb_ram.sv /users/epedlh/Project/spram512x50_cb.v
+   111	14:47	simv -gui
+   112	14:47	bg
+   114	17:17	17916:50vcs -debug_all -debug -sverilog -full64 /users/epedlh/Project/flop_test.sv /users/epedlh/Project/RegFile.sv /users/epedlh/Project/controller.sv /users/epedlh/Project/spram512x50_cb.v
+   115	17:17	18017:15history
+   116	17:17	vlogan -debug -sverilog -full64 /users/epedlh/Project/flop_test.sv /users/epedlh/Project/RegFile.sv /users/epedlh/Project/controller.sv /users/epedlh/Project/spram512x50_cb.v
+   117	17:17	vcs -debug_all -debug -sverilog -full64 /users/epedlh/Project/flop_test.sv /users/epedlh/Project/RegFile.sv /users/epedlh/Project/controller.sv /users/epedlh/Project/spram512x50_cb.v
+   118	17:38	vlogan -debug -sverilog -full64 /users/epedlh/Project/flop_test.sv /users/epedlh/Project/RegFile.sv /users/epedlh/Project/controller.sv /users/epedlh/Project/spram512x50_cb.v /users/epedlh/Project/classify_block_pipe1.sv /users/epedlh/Project/classify_block_pipe2.sv /users/epedlh/Project/classify_block_pipe3.sv /users/epedlh/Project/classification_block.sv
+   119	17:38	vcs debug_all -debug -sverilog -full64 /users/epedlh/Project/flop_test.sv /users/epedlh/Project/RegFile.sv /users/epedlh/Project/controller.sv /users/epedlh/Project/spram512x50_cb.v /users/epedlh/Project/classify_block_pipe1.sv /users/epedlh/Project/classify_block_pipe2.sv /users/epedlh/Project/classify_block_pipe3.sv /users/epedlh/Project/classification_block.sv
+   120	17:39	vcs -debug_all -debug -sverilog -full64 /users/epedlh/Project/flop_test.sv /users/epedlh/Project/RegFile.sv /users/epedlh/Project/controller.sv /users/epedlh/Project/spram512x50_cb.v /users/epedlh/Project/classify_block_pipe1.sv /users/epedlh/Project/classify_block_pipe2.sv /users/epedlh/Project/classify_block_pipe3.sv /users/epedlh/Project/classification_block.sv
+   121	17:40	vlogan -debug -sverilog -full64 /users/epedlh/Project/flop_test.sv /users/epedlh/Project/RegFile.sv /users/epedlh/Project/controller.sv /users/epedlh/Project/spram512x50_cb.v /users/epedlh/Project/classify_block_pipe1.sv /users/epedlh/Project/classify_block_pipe2.sv /users/epedlh/Project/classify_block_pipe3.sv /users/epedlh/Project/classification_block.sv /users/epedlh/Project/distance_calc.sv
+   122	17:40	vcs -debug_all -debug -sverilog -full64 /users/epedlh/Project/flop_test.sv /users/epedlh/Project/RegFile.sv /users/epedlh/Project/controller.sv /users/epedlh/Project/spram512x50_cb.v /users/epedlh/Project/classify_block_pipe1.sv /users/epedlh/Project/classify_block_pipe2.sv /users/epedlh/Project/classify_block_pipe3.sv /users/epedlh/Project/classification_block.sv /users/epedlh/Project/distance_calc.sv
+   126	17:40	cat ../../history_1730pm.txt
+   129	17:41	diff ../../history_1730pm.txt history
+   130	17:41	diff ../../history_1730pm.txt history |
+   131	17:41	history | diff ../../history_1730pm.txt
+   132	17:41	vlogan -debug -sverilog -full64 /users/epedlh/Project/flop_test.sv /users/epedlh/Project/RegFile.sv /users/epedlh/Project/controller.sv /users/epedlh/Project/spram512x50_cb.v /users/epedlh/Project/classify_block_pipe1.sv /users/epedlh/Project/classify_block_pipe2.sv /users/epedlh/Project/classify_block_pipe3.sv /users/epedlh/Project/classification_block.sv /users/epedlh/Project/distance_calc.sv /users/epedlh/Project/accumulator_adder.sv
+   133	17:42	vcs -debug_all -debug -sverilog -full64 /users/epedlh/Project/flop_test.sv /users/epedlh/Project/RegFile.sv /users/epedlh/Project/controller.sv /users/epedlh/Project/spram512x50_cb.v /users/epedlh/Project/classify_block_pipe1.sv /users/epedlh/Project/classify_block_pipe2.sv /users/epedlh/Project/classify_block_pipe3.sv /users/epedlh/Project/classification_block.sv /users/epedlh/Project/distance_calc.sv /users/epedlh/Project/accumulator_adder.sv
+   134	17:42	vlogan -debug -sverilog -full64 /users/epedlh/Project/flop_test.sv /users/epedlh/Project/RegFile.sv /users/epedlh/Project/controller.sv /users/epedlh/Project/spram512x50_cb.v /users/epedlh/Project/classify_block_pipe1.sv /users/epedlh/Project/classify_block_pipe2.sv /users/epedlh/Project/classify_block_pipe3.sv /users/epedlh/Project/classification_block.sv /users/epedlh/Project/distance_calc.sv /users/epedlh/Project/accumulator_adder.sv ../../history_1730pm.txt
+   135	17:42	vlogan -debug -sverilog -full64 /users/epedlh/Project/flop_test.sv /users/epedlh/Project/RegFile.sv /users/epedlh/Project/controller.sv /users/epedlh/Project/spram512x50_cb.v /users/epedlh/Project/classify_block_pipe1.sv /users/epedlh/Project/classify_block_pipe2.sv /users/epedlh/Project/classify_block_pipe3.sv /users/epedlh/Project/classification_block.sv /users/epedlh/Project/distance_calc.sv /users/epedlh/Project/accumulator_adder.sv /users/epedlh/Project/demux.sv
+   136	17:42	vcs -debug_all -debug -sverilog -full64 /users/epedlh/Project/flop_test.sv /users/epedlh/Project/RegFile.sv /users/epedlh/Project/controller.sv /users/epedlh/Project/spram512x50_cb.v /users/epedlh/Project/classify_block_pipe1.sv /users/epedlh/Project/classify_block_pipe2.sv /users/epedlh/Project/classify_block_pipe3.sv /users/epedlh/Project/classification_block.sv /users/epedlh/Project/distance_calc.sv /users/epedlh/Project/accumulator_adder.sv /users/epedlh/Project/demux.sv
+   137	17:42	history
+   138	17:42	history > ../../history_1730pm.txt
