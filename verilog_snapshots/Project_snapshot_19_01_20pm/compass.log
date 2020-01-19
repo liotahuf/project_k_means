@@ -1,0 +1,80 @@
+15-Dec-19 20:39 goel      working created
+15-Dec-19 20:39 goel      [pcl]spram512x50_cb v1 written to /hp/goel/spram512x50_cb/spram512x50_cb.pcl
+15-Dec-19 20:39 goel      [dcf]ccrs6a v1 written to /hp/goel/spram512x50_cb/ccrs6a.dcf
+15-Dec-19 20:39 goel      [dcf]ccrs6timinga v1 written to /hp/goel/spram512x50_cb/ccrs6timinga.dcf
+15-Dec-19 20:39 goel      [dcf]ccrs6luta v1 written to /hp/goel/spram512x50_cb/ccrs6luta.dcf
+15-Dec-19 20:39 goel      [dcf]ccrs6sbwa v1 written to /hp/goel/spram512x50_cb/ccrs6sbwa.dcf
+15-Dec-19 20:39 goel      [dcf]ccrs6capa v1 written to /hp/goel/spram512x50_cb/ccrs6capa.dcf
+15-Dec-19 20:39 goel      [dcf]ccrs6sizea v1 written to /hp/goel/spram512x50_cb/ccrs6sizea.dcf
+15-Dec-19 20:39 goel      [dcf]ccrs6powera v1 written to /hp/goel/spram512x50_cb/ccrs6powera.dcf
+15-Dec-19 20:39 goel      [dcf]ccrs6technoa v1 written to /hp/goel/spram512x50_cb/ccrs6technoa.dcf
+15-Dec-19 20:39 goel      [dcf]copyrighta v1 written to /hp/goel/spram512x50_cb/copyrighta.dcf
+15-Dec-19 20:39 goel      [mlf]ccrs6versdfa v1 written to /hp/goel/spram512x50_cb/ccrs6versdfa.mlf
+15-Dec-19 20:39 goel      [v]spram512x50_cb v1 written to /hp/goel/spram512x50_cb/spram512x50_cb.v
+15-Dec-19 20:39 goel      [mlf]ccrs6versdfa deleted
+15-Dec-19 20:39 goel      [dcf]ccrs6a deleted
+15-Dec-19 20:39 goel      [dcf]ccrs6timinga deleted
+15-Dec-19 20:39 goel      [dcf]ccrs6luta deleted
+15-Dec-19 20:39 goel      [dcf]ccrs6sbwa deleted
+15-Dec-19 20:39 goel      [dcf]ccrs6capa deleted
+15-Dec-19 20:39 goel      [dcf]ccrs6sizea deleted
+15-Dec-19 20:39 goel      [dcf]ccrs6powera deleted
+15-Dec-19 20:39 goel      [dcf]ccrs6technoa deleted
+15-Dec-19 20:39 goel      [dcf]copyrighta deleted
+15-Dec-19 20:39 goel      [dcf]ccrs6a v1 written to /hp/goel/spram512x50_cb/ccrs6a.dcf
+15-Dec-19 20:39 goel      [dcf]ccrs6timinga v1 written to /hp/goel/spram512x50_cb/ccrs6timinga.dcf
+15-Dec-19 20:39 goel      [dcf]ccrs6luta v1 written to /hp/goel/spram512x50_cb/ccrs6luta.dcf
+15-Dec-19 20:39 goel      [dcf]ccrs6sbwa v1 written to /hp/goel/spram512x50_cb/ccrs6sbwa.dcf
+15-Dec-19 20:39 goel      [dcf]ccrs6capa v1 written to /hp/goel/spram512x50_cb/ccrs6capa.dcf
+15-Dec-19 20:39 goel      [dcf]ccrs6sizea v1 written to /hp/goel/spram512x50_cb/ccrs6sizea.dcf
+15-Dec-19 20:39 goel      [dcf]ccrs6powera v1 written to /hp/goel/spram512x50_cb/ccrs6powera.dcf
+15-Dec-19 20:39 goel      [dcf]ccrs6technoa v1 written to /hp/goel/spram512x50_cb/ccrs6technoa.dcf
+15-Dec-19 20:39 goel      [dcf]copyrighta v1 written to /hp/goel/spram512x50_cb/copyrighta.dcf
+15-Dec-19 20:39 goel      [mlf]ccrs6vitala v1 written to /hp/goel/spram512x50_cb/ccrs6vitala.mlf
+15-Dec-19 20:39 goel      [vhd]spram512x50_cb v1 written to /hp/goel/spram512x50_cb/spram512x50_cb.vhd
+15-Dec-19 20:39 goel      [mlf]ccrs6vitala deleted
+15-Dec-19 20:39 goel      [dcf]ccrs6a deleted
+15-Dec-19 20:39 goel      [dcf]ccrs6timinga deleted
+15-Dec-19 20:39 goel      [dcf]ccrs6luta deleted
+15-Dec-19 20:39 goel      [dcf]ccrs6sbwa deleted
+15-Dec-19 20:39 goel      [dcf]ccrs6capa deleted
+15-Dec-19 20:39 goel      [dcf]ccrs6sizea deleted
+15-Dec-19 20:39 goel      [dcf]ccrs6powera deleted
+15-Dec-19 20:39 goel      [dcf]ccrs6technoa deleted
+15-Dec-19 20:39 goel      [dcf]copyrighta deleted
+15-Dec-19 20:40 goel      [dcf]ccrs6a v1 written to /hp/goel/spram512x50_cb/ccrs6a.dcf
+15-Dec-19 20:40 goel      [dcf]ccrs6timinga v1 written to /hp/goel/spram512x50_cb/ccrs6timinga.dcf
+15-Dec-19 20:40 goel      [dcf]ccrs6luta v1 written to /hp/goel/spram512x50_cb/ccrs6luta.dcf
+15-Dec-19 20:40 goel      [dcf]ccrs6sbwa v1 written to /hp/goel/spram512x50_cb/ccrs6sbwa.dcf
+15-Dec-19 20:40 goel      [dcf]ccrs6capa v1 written to /hp/goel/spram512x50_cb/ccrs6capa.dcf
+15-Dec-19 20:40 goel      [dcf]ccrs6sizea v1 written to /hp/goel/spram512x50_cb/ccrs6sizea.dcf
+15-Dec-19 20:40 goel      [dcf]ccrs6powera v1 written to /hp/goel/spram512x50_cb/ccrs6powera.dcf
+15-Dec-19 20:40 goel      [dcf]ccrs6technoa v1 written to /hp/goel/spram512x50_cb/ccrs6technoa.dcf
+15-Dec-19 20:40 goel      [dcf]copyrighta v1 written to /hp/goel/spram512x50_cb/copyrighta.dcf
+15-Dec-19 20:40 goel      [mlf]ccrs6syna v1 written to /hp/goel/spram512x50_cb/ccrs6syna.mlf
+15-Dec-19 20:40 goel      [syn]spram512x50_cb v1 written to /hp/goel/spram512x50_cb/spram512x50_cb.syn
+15-Dec-19 20:40 goel      [mlf]ccrs6syna deleted
+15-Dec-19 20:40 goel      [dcf]ccrs6a deleted
+15-Dec-19 20:40 goel      [dcf]ccrs6timinga deleted
+15-Dec-19 20:40 goel      [dcf]ccrs6luta deleted
+15-Dec-19 20:40 goel      [dcf]ccrs6sbwa deleted
+15-Dec-19 20:40 goel      [dcf]ccrs6capa deleted
+15-Dec-19 20:40 goel      [dcf]ccrs6sizea deleted
+15-Dec-19 20:40 goel      [dcf]ccrs6powera deleted
+15-Dec-19 20:40 goel      [dcf]ccrs6technoa deleted
+15-Dec-19 20:40 goel      [dcf]copyrighta deleted
+15-Dec-19 20:40 goel      [lg]spram512x50_cb v1 written to /hp/goel/spram512x50_cb/spram512x50_cb.lg
+15-Dec-19 20:40 goel      [cif]spram512x50_cb v1 written to /hp/goel/spram512x50_cb/spram512x50_cb.cif
+15-Dec-19 20:40 goel      [lg]spram512x50_cb v2 written to /hp/goel/spram512x50_cb/spram512x50_cb.lg
+15-Dec-19 20:40 goel      [nls]spram512x50_cb_corecellx16 v1 written to /hp/goel/spram512x50_cb/spram512x50_cb_corecellx16.nls
+15-Dec-19 20:40 goel      [nls]spram512x50_cb_column v1 written to /hp/goel/spram512x50_cb/spram512x50_cb_column.nls
+15-Dec-19 20:40 goel      [nls]spram512x50_cb_core v1 written to /hp/goel/spram512x50_cb/spram512x50_cb_core.nls
+15-Dec-19 20:40 goel      [nls]spram512x50_cb_io v1 written to /hp/goel/spram512x50_cb/spram512x50_cb_io.nls
+15-Dec-19 20:40 goel      [nls]spram512x50_cb_wldx16 v1 written to /hp/goel/spram512x50_cb/spram512x50_cb_wldx16.nls
+15-Dec-19 20:40 goel      [nls]spram512x50_cb_dumwl v1 written to /hp/goel/spram512x50_cb/spram512x50_cb_dumwl.nls
+15-Dec-19 20:40 goel      [nls]spram512x50_cb_dumblcol v1 written to /hp/goel/spram512x50_cb/spram512x50_cb_dumblcol.nls
+15-Dec-19 20:40 goel      [nls]spram512x50_cb_xdecoder v1 written to /hp/goel/spram512x50_cb/spram512x50_cb_xdecoder.nls
+15-Dec-19 20:40 goel      [nls]spram512x50_cb_control v1 written to /hp/goel/spram512x50_cb/spram512x50_cb_control.nls
+15-Dec-19 20:40 goel      [nls]spram512x50_cb v1 written to /hp/goel/spram512x50_cb/spram512x50_cb.nls
+15-Dec-19 20:40 goel      [cdl]spram512x50_cb v1 written to /hp/goel/spram512x50_cb/spram512x50_cb.cdl
+15-Dec-19 20:40 goel      [db]working v2 written to /hp/goel/spram512x50_cb/working.db
