@@ -1,0 +1,14 @@
+To do list:
+
+What was done today : 
+Matlab scripts to "translate" number from/to the fixed point representation to/from bin/hex/decimal(it is not very organized but they help checking if the numbers macth)
+First end to end test done!!!!!.
+It seems to work for an specific exmple(test bechn called flop test),it took 3 iterations to converged.
+there was a minor calculation error on one of the centroids(0.137 instead of 0.142), matbe be because the counter is one more than the actual number of points(need to investigate)
+
+Question : the interrup hould be on for one cycle or on until the CPU hot turns it off?
+
+Next time : insvestigate the centroid error (centroid number 8 in the flop test)
+make a more coplex example os test
+start finishing the project report
+start final presentation
