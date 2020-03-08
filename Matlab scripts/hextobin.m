@@ -1,0 +1,1 @@
+hexToBinaryVector('A1')
