@@ -1,0 +1,63 @@
+﻿Assigments from last time:  
+
+	top tb
+		write parameters description in top tb -done
+		clk commetn // 100MHz -done
+		in line 135 write description of tb actions - done
+		in line 223 @poseedge inteput -done 
+		second test ,do nothing test - done
+
+
+	Book:
+		2.7 Performance  - timming breakdowm - how much time each iteration as function of data points -done
+
+		Zero order verification:
+		3.1 blcok diagram of top_tb
+		3.2 Test description
+		3.3 Test results
+		3.3.1 Zoom out - import signals: apb,go, - screenshots taken,need to write paragraph
+		3.3.2 - Zooms in : inderect access, point classification,new centroids, interrupt screenshots taken,need to write paragraph
+
+		4 - Synthesis results
+		4.1 Technology - synthesis parameters,synthesis tool, clk freq, rams
+		4.2 Synthesis results - find worst path, see the slack and sicussion about slack(make screenshot) + power+ area
+		4.3 Floorplan - explain floorplain
+
+		5. Summary 
+		What we learned, ideas for future improvment, reset for next run issue,dividor issues, 
+
+Assigments to next time:
+
+	Book:
+
+		2.3 Pins descriptions
+		2.4 Clocks and resets
+		2.5 Interfaces descriptions
+		2.6.1 Regster file
+
+
+		2.7 Performance  - timming breakdowm - how much time each iteration as function of data points -done
+
+		Zero order verification:
+		3.1 blcok diagram of top_tb
+		3.2 Test description
+		3.3 Test results
+		3.3.1 Zoom out - import signals: apb,go,
+		3.3.2 - Zooms in : inderect access, point classification,new centroids, interrupt
+
+		4 - Synthesis results
+		4.1 Technology - synthesis parameters,synthesis tool, clk freq, rams
+		4.2 Synthesis results - find worst path, see the slack and sicussion about slack(make screenshot) + power+ area
+		4.3 Floorplan - explain floorplain
+
+		5. Summary 
+		What we learned, ideas for future improvment, reset for next run issue,dividor issues, 
+
+		+ clean minor TBDS
+
+Question for Shachar :
+
+Can you remaind us what are suposed to be sections:
+	2.3 Pins descriptions
+	2.4 Clocks and resets
+	2.5 Interfaces descriptions

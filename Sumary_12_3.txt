@@ -1,14 +1,16 @@
 Assigments :  
 
 top tb
-write parameters description in top tb
-clk commetn // 100MHz
-in line 135 write description of tb actions
-in line 223 @poseedge inteput 
+write parameters description in top tb -done
+clk commetn // 100MHz -done
+in line 135 write description of tb actions - done
+in line 223 @poseedge inteput -done 
+second test ,do nothing test - done
 
 
 Book:
-2.7 Performance  - timming breakdowm - how much time each iteration as function of data points
+
+2.7 Performance  - timming breakdowm - how much time each iteration as function of data points -done
 
 Zero order verification:
 3.1 blcok diagram of top_tb
