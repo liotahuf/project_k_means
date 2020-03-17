@@ -1,0 +1,36 @@
+﻿Assigments from last time:
+
+	Book:
+
+		2.3 Pins descriptions
+		2.4 Clocks and resets
+		2.5 Interfaces descriptions
+		2.6.1 Regster file
+
+		Zero order verification:
+		3.1 blcok diagram of top_tb -done
+		3.2 Test description - done
+		3.3 Test results - done partially 
+		3.3.1 Zoom out - import signals: apb,go, --need to add to book 
+		3.3.2 - Zooms in : inderect access, point classification,new centroids, interrupt --need to add to book 
+
+		4 - Synthesis results
+		4.1 Technology - synthesis parameters,synthesis tool, clk freq, rams
+		4.2 Synthesis results - find worst path, see the slack and sicussion about slack(make screenshot) + power+ area
+		4.3 Floorplan - explain floorplain
+
+		5. Summary 
+		What we learned, ideas for future improvment, reset for next run issue,dividor issues, 
+
+		+ clean minor TBDS
+
+Assigments for next time:
+
+
+Question for Shachar :
+
+
+1. about 2.4 - we have inside resets for the process, they are not controlled from the Interface of KMEANS TOP, are they needed to be announced?
+for example we reset at convergence block reset betweeen iterations.
+
+2
