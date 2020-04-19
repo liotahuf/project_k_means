@@ -15,12 +15,16 @@
 - הגדרות מרכזיות לכלי הסינתזה:  שעונים, reset-ים, מסלולים מיוחדים אם ישנם (multi-cycleֿ), וכיו״ב
 - תוצאות:  slack מירבי, ניתוח מסלול קשה ביותר, שטח, הספק (סטטי), דיאגרמת layout (+התייחסות)
 
-תיקונים שביצעתי היום בדיבוג שגיאות סינתזה:
--negedge reset_n
--output logic - change to output and add wires/regs if needed
+תיקונים שביצעתי ב27.3 בדיבוג שגיאות סינתזה:
+
+   לא חשוב:
+NEGEDGE RESETN
 -in module parameters - add the word parameter in teh begining
--enum logic - change to enum and give values to all specific enums
 -delete name of module in "endmodule" line in the end of some of the files that had it
+
+   חשוב ועשוי להשפיע על הלוגיקה:
+-output logic - change to output and add wires/regs if needed
+-enum logic - change to enum and give values to all specific enums
 
 הערה לתיקון - בREGFILE המשתנה ADRESS2COREOUT מחזיק סיגנל בגודל DATAWIDTH אולי צריך לתקן לADDRESSWIDTH
 הערה לתיקון - יש העברת מידע עד הCORE להחזרת סנטרואידים ויש סיגנל כפול ולא בשימוש לשם כך מCLASSIFY BLOCK 1
@@ -29,3 +33,6 @@
 שני שגיאות שלא מצליח לטפל:
 1. אזהרות שקשורות למודול של מחלק - גואל אמר לסנתז בנפרד לפי הוראות בקובץ IP.
 2. בעיית סינטקס של ENUM - לא נפתר עדיין...
+
+
+תיקונים שביצעתי ב6.4 בדיבוג שגיאות סינתזה:

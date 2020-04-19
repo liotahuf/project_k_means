@@ -7,6 +7,7 @@
  *------------------------------------------------------------------------------*/
 //TODO : change bit sizes for registers later
 module RegFile #(
+	parameter
 	addrWidth       = 9,
 	dataWidth       = 91,
 	reg_amount      =4,
@@ -21,20 +22,20 @@ module RegFile #(
 	input                              penable,
 	input        [dataWidth-1:0]       pwdata,
 	//
-	output logic [dataWidth-1:0]       prdata,
-	output logic                       pready,
+	output reg [dataWidth-1:0]       prdata,
+	output reg                       pready,
 	
 	//IF with k-means-core
 	input                              interupt,
 	input        [reg_amount-1:0]      reg_num,
 	input                              reg_write,
 	input        [dataWidth-1:0]       reg_write_data,
-	output logic [dataWidth-1:0]       data2core,
-	output logic [dataWidth-1:0]       address2core,
-	output logic                       go_core,
-	output logic                       w_r_ram_n,
-	output logic                       out_en_ram_n,
-	output logic                       chip_select_ram_n,
+	output reg [dataWidth-1:0]       data2core,
+	output reg [dataWidth-1:0]       address2core,
+	output reg                       go_core,
+	output reg                       w_r_ram_n,
+	output reg                       out_en_ram_n,
+	output reg                       chip_select_ram_n,
 	output       [addrWidth-1:0]       first_ram_address_out,
 	output       [addrWidth-1:0]       last_ram_address_out,
 	output       [manhatten_width-1:0] threshold_value
@@ -94,7 +95,7 @@ enum logic [reg_amount-1:0] { internal_status_reg,
 	                          threshold_reg
 } register_num;
 
-enum logic	[1:0] {SETUP, W_ENABLE, R_ENABLE} apb_curr_st;
+enum logic [1:0] {SETUP = 2'b0, W_ENABLE = 2'd1, R_ENABLE = 2'd2} apb_curr_st;
 reg [dataWidth-1:0] last_paddr ;
 reg w_to_ram_flag;
 
@@ -126,7 +127,7 @@ assign threshold_value =threshold;
 
 /* ---------------------------------- Interface with APB master ----------------------------------*/
 // Interface with APB master- indirect access read or write process state machine
-always @(rst_n==0 or posedge clk) begin
+always @(negedge rst_n or posedge clk) begin
 	if (rst_n == 0) begin
 		apb_curr_st 		<= SETUP;
 	end
@@ -161,7 +162,7 @@ always @(rst_n==0 or posedge clk) begin
 end
 
 //signals changing due to state machines curr_state
-always @(rst_n==0 or posedge clk) begin
+always @(negedge rst_n or posedge clk) begin
 	if (rst_n == 0) begin
 		go_register	<=0;
 		
@@ -183,7 +184,7 @@ always @(rst_n==0 or posedge clk) begin
 				
 				SETUP : begin
 					// clear the prdata
-					prdata <= '0;
+					prdata <= 0;
 					pready<=1'b0;
 					
 				end
@@ -315,7 +316,7 @@ end
 /* ---------------------------------- Interface with core ----------------------------------*/
 
 //Interface with core - set go signal to core
-always @(rst_n==1'b0 or posedge clk) begin
+always @(negedge rst_n or posedge clk) begin
 	if (rst_n == 1'b0) begin
 		go_core<=1'b0;
 	end
@@ -329,7 +330,7 @@ always @(rst_n==1'b0 or posedge clk) begin
 end
 
 //Interface with core- write to RAM
-always @(rst_n==1'b0 or  posedge clk) begin
+always @(negedge rst_n or posedge clk) begin
 	if (rst_n == 1'b0) begin
 		data2core<=91'b0 ;
 		address2core<=91'b0;
