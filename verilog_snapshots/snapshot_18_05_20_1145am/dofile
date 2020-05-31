@@ -1,0 +1,60 @@
+
+analyze -format sverilog /users/epedlh/Project/accumulator_adder.sv
+
+analyze -format sverilog /users/epedlh/Project/demux.sv
+
+analyze -format sverilog /users/epedlh/Project/classify_block_pipe1.sv
+
+analyze -format sverilog /users/epedlh/Project/classify_block_pipe2.sv
+
+analyze -format sverilog /users/epedlh/Project/classify_block_pipe3.sv
+
+analyze -format sverilog /users/epedlh/Project/classification_block.sv
+
+analyze -format sverilog /users/epedlh/Project/controller.sv
+
+analyze -format sverilog convergence_check_block.sv
+
+analyze -format sverilog /users/epedlh/Project/distance_calc.sv
+
+analyze -format sverilog /users/epedlh/Project/integer_to_fixed_point_and_concatenating.sv
+
+analyze -format sverilog /users/epedlh/Project/new_means_calculation_block.sv
+
+analyze -format sverilog /users/epedlh/Project/parsing_dividing.sv
+
+analyze -format sverilog /users/epedlh/Project/RegFile.sv
+
+analyze -format sverilog /users/epedlh/Project/k_means_core.sv
+
+analyze -format sverilog /users/epedlh/Project/k_means_top.sv
+
+ 
+
+elaborate accumulator_adder -architecture verilog -library DEFAULT
+
+elaborate demux -architecture verilog -library DEFAULT
+
+elaborate classify_block_pipe1 -architecture verilog -library DEFAULT
+
+elaborate classify_block_pipe2 -architecture verilog -library DEFAULT
+
+elaborate classify_block_pipe3 -architecture verilog -library DEFAULT
+
+elaborate classification_block -architecture verilog -library DEFAULT
+
+elaborate controller -architecture verilog -library DEFAULT
+
+elaborate convergence_check_block -architecture verilog -library DEFAULT
+
+elaborate distance_calc -architecture verilog -library DEFAULT
+
+elaborate integer_to_fixed_point_and_concatenating -architecture verilog -library DEFAULT
+
+elaborate parsing_dividing -architecture verilog -library DEFAULT
+
+elaborate RegFile -architecture verilog -library DEFAULT
+
+elaborate k_means_core -architecture verilog -library DEFAULT
+
+elaborate k_means_top -architecture verilog -library DEFAULT
