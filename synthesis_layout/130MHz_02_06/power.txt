@@ -1,0 +1,591 @@
+****************************************
+Report : power
+        -analysis_effort low
+Design : k_means_top
+Version: N-2017.09-SP3
+Date   : Tue Jun  2 23:12:49 2020
+****************************************
+
+
+Library(s) Used:
+
+    tsl18fs120_typ (File: /tools/kits/tower/PDK_TS18SL/FS120_STD_Cells_0_18um_2005_12/DW_TOWER_tsl18fs120/2005.12/synopsys/2004.12/models/tsl18fs120_typ.db)
+
+
+Operating Conditions: tsl18fs120_typ   Library: tsl18fs120_typ
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+k_means_top            280000            tsl18fs120_typ
+RegFile_addrWidth9_dataWidth91_reg_amount8_manhatten_width16_1
+                       16000             tsl18fs120_typ
+k_means_core_tc_mode1_rem_mode1_accum_width154_addrWidth9_dataWidth91_centroid_num8_log2_cent_num3_accum_cord_width22_cordinate_width13_count_width10_manhatten_width16_log2_of_point_cnt9_ram_word_len50_reg_amount8_1
+                       280000            tsl18fs120_typ
+controller_tc_mode1_rem_mode1_accum_width154_addrWidth9_dataWidth91_centroid_num8_log2_cent_num3_accum_cord_width22_cordinate_width13_count_width10_manhatten_width16_log2_of_point_cnt9_ram_word_len50_reg_amount8_1
+                       4000              tsl18fs120_typ
+classification_block_tc_mode1_rem_mode1_accum_width154_addrWidth9_dataWidth91_centroid_num8_accum_cord_width22_cordinate_width13_count_width10_reg_amount8_1
+                       70000             tsl18fs120_typ
+new_means_calculation_block_tc_mode1_rem_mode1_accum_width154_count_width10_addrWidth9_dataWidth91_centroid_num8_cordinate_width13_accum_cord_width22_1
+                       140000            tsl18fs120_typ
+classify_block_pipe1   35000             tsl18fs120_typ
+classify_block_pipe2   16000             tsl18fs120_typ
+classify_block_pipe3   35000             tsl18fs120_typ
+parsing_dividing       140000            tsl18fs120_typ
+integer_to_fixed_point_and_concatenating
+                       ForQA             tsl18fs120_typ
+distance_calc_0        4000              tsl18fs120_typ
+demux_0                4000              tsl18fs120_typ
+accumulator_adder_0    4000              tsl18fs120_typ
+accumulator_adder_1    4000              tsl18fs120_typ
+accumulator_adder_2    4000              tsl18fs120_typ
+accumulator_adder_3    4000              tsl18fs120_typ
+accumulator_adder_4    4000              tsl18fs120_typ
+accumulator_adder_5    4000              tsl18fs120_typ
+accumulator_adder_6    4000              tsl18fs120_typ
+accumulator_adder_7    4000              tsl18fs120_typ
+demux_1                4000              tsl18fs120_typ
+distance_calc_2        4000              tsl18fs120_typ
+distance_calc_3        4000              tsl18fs120_typ
+distance_calc_4        4000              tsl18fs120_typ
+distance_calc_5        4000              tsl18fs120_typ
+distance_calc_6        4000              tsl18fs120_typ
+distance_calc_7        4000              tsl18fs120_typ
+distance_calc_8        4000              tsl18fs120_typ
+distance_calc_2_DW01_sub_0
+                       ForQA             tsl18fs120_typ
+distance_calc_2_DW01_sub_1
+                       ForQA             tsl18fs120_typ
+distance_calc_2_DW01_sub_2
+                       ForQA             tsl18fs120_typ
+distance_calc_2_DW01_sub_3
+                       ForQA             tsl18fs120_typ
+distance_calc_2_DW01_sub_4
+                       ForQA             tsl18fs120_typ
+distance_calc_2_DW01_sub_5
+                       ForQA             tsl18fs120_typ
+distance_calc_2_DW01_sub_6
+                       ForQA             tsl18fs120_typ
+distance_calc_2_DW01_sub_7
+                       ForQA             tsl18fs120_typ
+distance_calc_2_DW01_sub_8
+                       ForQA             tsl18fs120_typ
+distance_calc_2_DW01_sub_9
+                       ForQA             tsl18fs120_typ
+distance_calc_2_DW01_sub_10
+                       ForQA             tsl18fs120_typ
+distance_calc_2_DW01_sub_11
+                       ForQA             tsl18fs120_typ
+distance_calc_2_DW01_sub_12
+                       ForQA             tsl18fs120_typ
+distance_calc_2_DW01_sub_13
+                       ForQA             tsl18fs120_typ
+distance_calc_3_DW01_sub_0
+                       ForQA             tsl18fs120_typ
+distance_calc_3_DW01_sub_1
+                       ForQA             tsl18fs120_typ
+distance_calc_3_DW01_sub_2
+                       ForQA             tsl18fs120_typ
+distance_calc_3_DW01_sub_3
+                       ForQA             tsl18fs120_typ
+distance_calc_3_DW01_sub_4
+                       ForQA             tsl18fs120_typ
+distance_calc_3_DW01_sub_5
+                       ForQA             tsl18fs120_typ
+distance_calc_3_DW01_sub_6
+                       ForQA             tsl18fs120_typ
+distance_calc_3_DW01_sub_7
+                       ForQA             tsl18fs120_typ
+distance_calc_3_DW01_sub_8
+                       ForQA             tsl18fs120_typ
+distance_calc_3_DW01_sub_9
+                       ForQA             tsl18fs120_typ
+distance_calc_3_DW01_sub_10
+                       ForQA             tsl18fs120_typ
+distance_calc_3_DW01_sub_11
+                       ForQA             tsl18fs120_typ
+distance_calc_3_DW01_sub_12
+                       ForQA             tsl18fs120_typ
+distance_calc_3_DW01_sub_13
+                       ForQA             tsl18fs120_typ
+distance_calc_4_DW01_sub_0
+                       ForQA             tsl18fs120_typ
+distance_calc_4_DW01_sub_1
+                       ForQA             tsl18fs120_typ
+distance_calc_4_DW01_sub_2
+                       ForQA             tsl18fs120_typ
+distance_calc_4_DW01_sub_3
+                       ForQA             tsl18fs120_typ
+distance_calc_4_DW01_sub_4
+                       ForQA             tsl18fs120_typ
+distance_calc_4_DW01_sub_5
+                       ForQA             tsl18fs120_typ
+distance_calc_4_DW01_sub_6
+                       ForQA             tsl18fs120_typ
+distance_calc_4_DW01_sub_7
+                       ForQA             tsl18fs120_typ
+distance_calc_4_DW01_sub_8
+                       ForQA             tsl18fs120_typ
+distance_calc_4_DW01_sub_9
+                       ForQA             tsl18fs120_typ
+distance_calc_4_DW01_sub_10
+                       ForQA             tsl18fs120_typ
+distance_calc_4_DW01_sub_11
+                       ForQA             tsl18fs120_typ
+distance_calc_4_DW01_sub_12
+                       ForQA             tsl18fs120_typ
+distance_calc_4_DW01_sub_13
+                       ForQA             tsl18fs120_typ
+distance_calc_5_DW01_sub_0
+                       ForQA             tsl18fs120_typ
+distance_calc_5_DW01_sub_1
+                       ForQA             tsl18fs120_typ
+distance_calc_5_DW01_sub_2
+                       ForQA             tsl18fs120_typ
+distance_calc_5_DW01_sub_3
+                       ForQA             tsl18fs120_typ
+distance_calc_5_DW01_sub_4
+                       ForQA             tsl18fs120_typ
+distance_calc_5_DW01_sub_5
+                       ForQA             tsl18fs120_typ
+distance_calc_5_DW01_sub_6
+                       ForQA             tsl18fs120_typ
+distance_calc_5_DW01_sub_7
+                       ForQA             tsl18fs120_typ
+distance_calc_5_DW01_sub_8
+                       ForQA             tsl18fs120_typ
+distance_calc_5_DW01_sub_9
+                       ForQA             tsl18fs120_typ
+distance_calc_5_DW01_sub_10
+                       ForQA             tsl18fs120_typ
+distance_calc_5_DW01_sub_11
+                       ForQA             tsl18fs120_typ
+distance_calc_5_DW01_sub_12
+                       ForQA             tsl18fs120_typ
+distance_calc_5_DW01_sub_13
+                       ForQA             tsl18fs120_typ
+distance_calc_6_DW01_sub_0
+                       ForQA             tsl18fs120_typ
+distance_calc_6_DW01_sub_1
+                       ForQA             tsl18fs120_typ
+distance_calc_6_DW01_sub_2
+                       ForQA             tsl18fs120_typ
+distance_calc_6_DW01_sub_3
+                       ForQA             tsl18fs120_typ
+distance_calc_6_DW01_sub_4
+                       ForQA             tsl18fs120_typ
+distance_calc_6_DW01_sub_5
+                       ForQA             tsl18fs120_typ
+distance_calc_6_DW01_sub_6
+                       ForQA             tsl18fs120_typ
+distance_calc_6_DW01_sub_7
+                       ForQA             tsl18fs120_typ
+distance_calc_6_DW01_sub_8
+                       ForQA             tsl18fs120_typ
+distance_calc_6_DW01_sub_9
+                       ForQA             tsl18fs120_typ
+distance_calc_6_DW01_sub_10
+                       ForQA             tsl18fs120_typ
+distance_calc_6_DW01_sub_11
+                       ForQA             tsl18fs120_typ
+distance_calc_6_DW01_sub_12
+                       ForQA             tsl18fs120_typ
+distance_calc_6_DW01_sub_13
+                       ForQA             tsl18fs120_typ
+distance_calc_7_DW01_sub_0
+                       ForQA             tsl18fs120_typ
+distance_calc_7_DW01_sub_1
+                       ForQA             tsl18fs120_typ
+distance_calc_7_DW01_sub_2
+                       ForQA             tsl18fs120_typ
+distance_calc_7_DW01_sub_3
+                       ForQA             tsl18fs120_typ
+distance_calc_7_DW01_sub_4
+                       ForQA             tsl18fs120_typ
+distance_calc_7_DW01_sub_5
+                       ForQA             tsl18fs120_typ
+distance_calc_7_DW01_sub_6
+                       ForQA             tsl18fs120_typ
+distance_calc_7_DW01_sub_7
+                       ForQA             tsl18fs120_typ
+distance_calc_7_DW01_sub_8
+                       ForQA             tsl18fs120_typ
+distance_calc_7_DW01_sub_9
+                       ForQA             tsl18fs120_typ
+distance_calc_7_DW01_sub_10
+                       ForQA             tsl18fs120_typ
+distance_calc_7_DW01_sub_11
+                       ForQA             tsl18fs120_typ
+distance_calc_7_DW01_sub_12
+                       ForQA             tsl18fs120_typ
+distance_calc_7_DW01_sub_13
+                       ForQA             tsl18fs120_typ
+distance_calc_8_DW01_sub_0
+                       ForQA             tsl18fs120_typ
+distance_calc_8_DW01_sub_1
+                       ForQA             tsl18fs120_typ
+distance_calc_8_DW01_sub_2
+                       ForQA             tsl18fs120_typ
+distance_calc_8_DW01_sub_3
+                       ForQA             tsl18fs120_typ
+distance_calc_8_DW01_sub_4
+                       ForQA             tsl18fs120_typ
+distance_calc_8_DW01_sub_5
+                       ForQA             tsl18fs120_typ
+distance_calc_8_DW01_sub_6
+                       ForQA             tsl18fs120_typ
+distance_calc_8_DW01_sub_7
+                       ForQA             tsl18fs120_typ
+distance_calc_8_DW01_sub_8
+                       ForQA             tsl18fs120_typ
+distance_calc_8_DW01_sub_9
+                       ForQA             tsl18fs120_typ
+distance_calc_8_DW01_sub_10
+                       ForQA             tsl18fs120_typ
+distance_calc_8_DW01_sub_11
+                       ForQA             tsl18fs120_typ
+distance_calc_8_DW01_sub_12
+                       ForQA             tsl18fs120_typ
+distance_calc_8_DW01_sub_13
+                       ForQA             tsl18fs120_typ
+distance_calc_0_DW01_sub_0
+                       ForQA             tsl18fs120_typ
+distance_calc_0_DW01_sub_1
+                       ForQA             tsl18fs120_typ
+distance_calc_0_DW01_sub_2
+                       ForQA             tsl18fs120_typ
+distance_calc_0_DW01_sub_3
+                       ForQA             tsl18fs120_typ
+distance_calc_0_DW01_sub_4
+                       ForQA             tsl18fs120_typ
+distance_calc_0_DW01_sub_5
+                       ForQA             tsl18fs120_typ
+distance_calc_0_DW01_sub_6
+                       ForQA             tsl18fs120_typ
+distance_calc_0_DW01_sub_7
+                       ForQA             tsl18fs120_typ
+distance_calc_0_DW01_sub_8
+                       ForQA             tsl18fs120_typ
+distance_calc_0_DW01_sub_9
+                       ForQA             tsl18fs120_typ
+distance_calc_0_DW01_sub_10
+                       ForQA             tsl18fs120_typ
+distance_calc_0_DW01_sub_11
+                       ForQA             tsl18fs120_typ
+distance_calc_0_DW01_sub_12
+                       ForQA             tsl18fs120_typ
+distance_calc_0_DW01_sub_13
+                       ForQA             tsl18fs120_typ
+controller_tc_mode1_rem_mode1_accum_width154_addrWidth9_dataWidth91_centroid_num8_log2_cent_num3_accum_cord_width22_cordinate_width13_count_width10_manhatten_width16_log2_of_point_cnt9_ram_word_len50_reg_amount8_1_DW01_inc_0
+                       ForQA             tsl18fs120_typ
+controller_tc_mode1_rem_mode1_accum_width154_addrWidth9_dataWidth91_centroid_num8_log2_cent_num3_accum_cord_width22_cordinate_width13_count_width10_manhatten_width16_log2_of_point_cnt9_ram_word_len50_reg_amount8_1_DW01_inc_1
+                       ForQA             tsl18fs120_typ
+controller_tc_mode1_rem_mode1_accum_width154_addrWidth9_dataWidth91_centroid_num8_log2_cent_num3_accum_cord_width22_cordinate_width13_count_width10_manhatten_width16_log2_of_point_cnt9_ram_word_len50_reg_amount8_1_DW01_add_0
+                       ForQA             tsl18fs120_typ
+distance_calc_8_DW01_add_0
+                       ForQA             tsl18fs120_typ
+distance_calc_8_DW01_add_1
+                       ForQA             tsl18fs120_typ
+distance_calc_8_DW01_add_3
+                       ForQA             tsl18fs120_typ
+distance_calc_8_DW01_add_4
+                       ForQA             tsl18fs120_typ
+distance_calc_8_DW01_add_5
+                       ForQA             tsl18fs120_typ
+distance_calc_7_DW01_add_0
+                       ForQA             tsl18fs120_typ
+distance_calc_7_DW01_add_1
+                       ForQA             tsl18fs120_typ
+distance_calc_7_DW01_add_3
+                       ForQA             tsl18fs120_typ
+distance_calc_7_DW01_add_4
+                       ForQA             tsl18fs120_typ
+distance_calc_7_DW01_add_5
+                       ForQA             tsl18fs120_typ
+distance_calc_6_DW01_add_0
+                       ForQA             tsl18fs120_typ
+distance_calc_6_DW01_add_1
+                       ForQA             tsl18fs120_typ
+distance_calc_6_DW01_add_3
+                       ForQA             tsl18fs120_typ
+distance_calc_6_DW01_add_4
+                       ForQA             tsl18fs120_typ
+distance_calc_6_DW01_add_5
+                       ForQA             tsl18fs120_typ
+distance_calc_5_DW01_add_0
+                       ForQA             tsl18fs120_typ
+distance_calc_5_DW01_add_1
+                       ForQA             tsl18fs120_typ
+distance_calc_5_DW01_add_3
+                       ForQA             tsl18fs120_typ
+distance_calc_5_DW01_add_4
+                       ForQA             tsl18fs120_typ
+distance_calc_5_DW01_add_5
+                       ForQA             tsl18fs120_typ
+distance_calc_4_DW01_add_0
+                       ForQA             tsl18fs120_typ
+distance_calc_4_DW01_add_1
+                       ForQA             tsl18fs120_typ
+distance_calc_4_DW01_add_3
+                       ForQA             tsl18fs120_typ
+distance_calc_4_DW01_add_4
+                       ForQA             tsl18fs120_typ
+distance_calc_4_DW01_add_5
+                       ForQA             tsl18fs120_typ
+distance_calc_3_DW01_add_0
+                       ForQA             tsl18fs120_typ
+distance_calc_3_DW01_add_1
+                       ForQA             tsl18fs120_typ
+distance_calc_3_DW01_add_3
+                       ForQA             tsl18fs120_typ
+distance_calc_3_DW01_add_4
+                       ForQA             tsl18fs120_typ
+distance_calc_3_DW01_add_5
+                       ForQA             tsl18fs120_typ
+distance_calc_2_DW01_add_0
+                       ForQA             tsl18fs120_typ
+distance_calc_2_DW01_add_1
+                       ForQA             tsl18fs120_typ
+distance_calc_2_DW01_add_3
+                       ForQA             tsl18fs120_typ
+distance_calc_2_DW01_add_4
+                       ForQA             tsl18fs120_typ
+distance_calc_2_DW01_add_5
+                       ForQA             tsl18fs120_typ
+distance_calc_0_DW01_add_0
+                       ForQA             tsl18fs120_typ
+distance_calc_0_DW01_add_1
+                       ForQA             tsl18fs120_typ
+distance_calc_0_DW01_add_3
+                       ForQA             tsl18fs120_typ
+distance_calc_0_DW01_add_4
+                       ForQA             tsl18fs120_typ
+distance_calc_0_DW01_add_5
+                       ForQA             tsl18fs120_typ
+parsing_dividing_DW_div_7
+                       16000             tsl18fs120_typ
+parsing_dividing_add_0_root_add_337_2_DP_OP_289_5616_0
+                       8000              tsl18fs120_typ
+parsing_dividing_DW_div_8
+                       16000             tsl18fs120_typ
+parsing_dividing_add_0_root_add_337_2_DP_OP_293_5616_0
+                       8000              tsl18fs120_typ
+parsing_dividing_DW_div_9
+                       16000             tsl18fs120_typ
+parsing_dividing_add_0_root_add_337_2_DP_OP_295_5616_0
+                       8000              tsl18fs120_typ
+parsing_dividing_DW_div_10
+                       16000             tsl18fs120_typ
+parsing_dividing_add_0_root_add_337_2_DP_OP_297_5616_0
+                       8000              tsl18fs120_typ
+parsing_dividing_DW_div_11
+                       16000             tsl18fs120_typ
+parsing_dividing_add_0_root_add_337_2_DP_OP_299_5616_0
+                       8000              tsl18fs120_typ
+parsing_dividing_DW_div_12
+                       16000             tsl18fs120_typ
+parsing_dividing_add_0_root_add_337_2_DP_OP_301_5616_0
+                       8000              tsl18fs120_typ
+parsing_dividing_DW_div_13
+                       16000             tsl18fs120_typ
+parsing_dividing_add_0_root_add_337_2_DP_OP_303_5616_0
+                       8000              tsl18fs120_typ
+classify_block_pipe3_DW01_add_8
+                       4000              tsl18fs120_typ
+classify_block_pipe3_DW01_add_9
+                       4000              tsl18fs120_typ
+classify_block_pipe3_DW01_add_10
+                       4000              tsl18fs120_typ
+classify_block_pipe3_DW01_add_11
+                       4000              tsl18fs120_typ
+classify_block_pipe3_DW01_add_12
+                       4000              tsl18fs120_typ
+classify_block_pipe3_DW01_add_13
+                       4000              tsl18fs120_typ
+classify_block_pipe3_DW01_add_14
+                       4000              tsl18fs120_typ
+classify_block_pipe3_DW01_add_15
+                       4000              tsl18fs120_typ
+classify_block_pipe2_DW_cmp_7
+                       4000              tsl18fs120_typ
+classify_block_pipe2_DW_cmp_8
+                       4000              tsl18fs120_typ
+classify_block_pipe2_DW_cmp_9
+                       4000              tsl18fs120_typ
+classify_block_pipe2_DW_cmp_10
+                       4000              tsl18fs120_typ
+classify_block_pipe2_DW_cmp_11
+                       4000              tsl18fs120_typ
+classify_block_pipe2_DW_cmp_12
+                       4000              tsl18fs120_typ
+classify_block_pipe2_DW_cmp_13
+                       4000              tsl18fs120_typ
+accumulator_adder_1_DW01_add_7
+                       4000              tsl18fs120_typ
+accumulator_adder_1_DW01_add_8
+                       4000              tsl18fs120_typ
+accumulator_adder_1_DW01_add_9
+                       4000              tsl18fs120_typ
+accumulator_adder_1_DW01_add_10
+                       4000              tsl18fs120_typ
+accumulator_adder_1_DW01_add_11
+                       4000              tsl18fs120_typ
+accumulator_adder_1_DW01_add_12
+                       4000              tsl18fs120_typ
+accumulator_adder_1_DW01_add_13
+                       4000              tsl18fs120_typ
+k_means_core_tc_mode1_rem_mode1_accum_width154_addrWidth9_dataWidth91_centroid_num8_log2_cent_num3_accum_cord_width22_cordinate_width13_count_width10_manhatten_width16_log2_of_point_cnt9_ram_word_len50_reg_amount8_1_DW01_add_6
+                       4000              tsl18fs120_typ
+k_means_core_tc_mode1_rem_mode1_accum_width154_addrWidth9_dataWidth91_centroid_num8_log2_cent_num3_accum_cord_width22_cordinate_width13_count_width10_manhatten_width16_log2_of_point_cnt9_ram_word_len50_reg_amount8_1_DW01_sub_14
+                       4000              tsl18fs120_typ
+k_means_core_tc_mode1_rem_mode1_accum_width154_addrWidth9_dataWidth91_centroid_num8_log2_cent_num3_accum_cord_width22_cordinate_width13_count_width10_manhatten_width16_log2_of_point_cnt9_ram_word_len50_reg_amount8_1_DW01_sub_15
+                       4000              tsl18fs120_typ
+k_means_core_tc_mode1_rem_mode1_accum_width154_addrWidth9_dataWidth91_centroid_num8_log2_cent_num3_accum_cord_width22_cordinate_width13_count_width10_manhatten_width16_log2_of_point_cnt9_ram_word_len50_reg_amount8_1_DW01_add_7
+                       4000              tsl18fs120_typ
+k_means_core_tc_mode1_rem_mode1_accum_width154_addrWidth9_dataWidth91_centroid_num8_log2_cent_num3_accum_cord_width22_cordinate_width13_count_width10_manhatten_width16_log2_of_point_cnt9_ram_word_len50_reg_amount8_1_DW01_add_8
+                       4000              tsl18fs120_typ
+k_means_core_tc_mode1_rem_mode1_accum_width154_addrWidth9_dataWidth91_centroid_num8_log2_cent_num3_accum_cord_width22_cordinate_width13_count_width10_manhatten_width16_log2_of_point_cnt9_ram_word_len50_reg_amount8_1_DW01_add_9
+                       4000              tsl18fs120_typ
+k_means_core_tc_mode1_rem_mode1_accum_width154_addrWidth9_dataWidth91_centroid_num8_log2_cent_num3_accum_cord_width22_cordinate_width13_count_width10_manhatten_width16_log2_of_point_cnt9_ram_word_len50_reg_amount8_1_DW01_add_10
+                       4000              tsl18fs120_typ
+k_means_core_tc_mode1_rem_mode1_accum_width154_addrWidth9_dataWidth91_centroid_num8_log2_cent_num3_accum_cord_width22_cordinate_width13_count_width10_manhatten_width16_log2_of_point_cnt9_ram_word_len50_reg_amount8_1_DW01_sub_16
+                       4000              tsl18fs120_typ
+k_means_core_tc_mode1_rem_mode1_accum_width154_addrWidth9_dataWidth91_centroid_num8_log2_cent_num3_accum_cord_width22_cordinate_width13_count_width10_manhatten_width16_log2_of_point_cnt9_ram_word_len50_reg_amount8_1_DW01_add_11
+                       4000              tsl18fs120_typ
+k_means_core_tc_mode1_rem_mode1_accum_width154_addrWidth9_dataWidth91_centroid_num8_log2_cent_num3_accum_cord_width22_cordinate_width13_count_width10_manhatten_width16_log2_of_point_cnt9_ram_word_len50_reg_amount8_1_DW01_sub_17
+                       4000              tsl18fs120_typ
+k_means_core_tc_mode1_rem_mode1_accum_width154_addrWidth9_dataWidth91_centroid_num8_log2_cent_num3_accum_cord_width22_cordinate_width13_count_width10_manhatten_width16_log2_of_point_cnt9_ram_word_len50_reg_amount8_1_DW01_sub_18
+                       4000              tsl18fs120_typ
+k_means_core_tc_mode1_rem_mode1_accum_width154_addrWidth9_dataWidth91_centroid_num8_log2_cent_num3_accum_cord_width22_cordinate_width13_count_width10_manhatten_width16_log2_of_point_cnt9_ram_word_len50_reg_amount8_1_DW01_sub_19
+                       4000              tsl18fs120_typ
+k_means_core_tc_mode1_rem_mode1_accum_width154_addrWidth9_dataWidth91_centroid_num8_log2_cent_num3_accum_cord_width22_cordinate_width13_count_width10_manhatten_width16_log2_of_point_cnt9_ram_word_len50_reg_amount8_1_DW01_sub_20
+                       4000              tsl18fs120_typ
+accumulator_adder_0_DW01_add_7
+                       4000              tsl18fs120_typ
+accumulator_adder_0_DW01_add_8
+                       4000              tsl18fs120_typ
+accumulator_adder_0_DW01_add_9
+                       4000              tsl18fs120_typ
+accumulator_adder_0_DW01_add_10
+                       4000              tsl18fs120_typ
+accumulator_adder_0_DW01_add_11
+                       4000              tsl18fs120_typ
+accumulator_adder_0_DW01_add_12
+                       4000              tsl18fs120_typ
+accumulator_adder_0_DW01_add_13
+                       4000              tsl18fs120_typ
+accumulator_adder_7_DW01_add_7
+                       4000              tsl18fs120_typ
+accumulator_adder_7_DW01_add_8
+                       4000              tsl18fs120_typ
+accumulator_adder_7_DW01_add_9
+                       4000              tsl18fs120_typ
+accumulator_adder_7_DW01_add_10
+                       4000              tsl18fs120_typ
+accumulator_adder_7_DW01_add_11
+                       4000              tsl18fs120_typ
+accumulator_adder_7_DW01_add_12
+                       4000              tsl18fs120_typ
+accumulator_adder_7_DW01_add_13
+                       4000              tsl18fs120_typ
+accumulator_adder_6_DW01_add_7
+                       4000              tsl18fs120_typ
+accumulator_adder_6_DW01_add_8
+                       4000              tsl18fs120_typ
+accumulator_adder_6_DW01_add_9
+                       4000              tsl18fs120_typ
+accumulator_adder_6_DW01_add_10
+                       4000              tsl18fs120_typ
+accumulator_adder_6_DW01_add_11
+                       4000              tsl18fs120_typ
+accumulator_adder_6_DW01_add_12
+                       4000              tsl18fs120_typ
+accumulator_adder_6_DW01_add_13
+                       4000              tsl18fs120_typ
+accumulator_adder_5_DW01_add_7
+                       4000              tsl18fs120_typ
+accumulator_adder_5_DW01_add_8
+                       4000              tsl18fs120_typ
+accumulator_adder_5_DW01_add_9
+                       4000              tsl18fs120_typ
+accumulator_adder_5_DW01_add_10
+                       4000              tsl18fs120_typ
+accumulator_adder_5_DW01_add_11
+                       4000              tsl18fs120_typ
+accumulator_adder_5_DW01_add_12
+                       4000              tsl18fs120_typ
+accumulator_adder_5_DW01_add_13
+                       4000              tsl18fs120_typ
+accumulator_adder_4_DW01_add_7
+                       4000              tsl18fs120_typ
+accumulator_adder_4_DW01_add_8
+                       4000              tsl18fs120_typ
+accumulator_adder_4_DW01_add_9
+                       4000              tsl18fs120_typ
+accumulator_adder_4_DW01_add_10
+                       4000              tsl18fs120_typ
+accumulator_adder_4_DW01_add_11
+                       4000              tsl18fs120_typ
+accumulator_adder_4_DW01_add_12
+                       4000              tsl18fs120_typ
+accumulator_adder_4_DW01_add_13
+                       4000              tsl18fs120_typ
+accumulator_adder_3_DW01_add_7
+                       4000              tsl18fs120_typ
+accumulator_adder_3_DW01_add_8
+                       4000              tsl18fs120_typ
+accumulator_adder_3_DW01_add_9
+                       4000              tsl18fs120_typ
+accumulator_adder_3_DW01_add_10
+                       4000              tsl18fs120_typ
+accumulator_adder_3_DW01_add_11
+                       4000              tsl18fs120_typ
+accumulator_adder_3_DW01_add_12
+                       4000              tsl18fs120_typ
+accumulator_adder_3_DW01_add_13
+                       4000              tsl18fs120_typ
+accumulator_adder_2_DW01_add_7
+                       4000              tsl18fs120_typ
+accumulator_adder_2_DW01_add_8
+                       4000              tsl18fs120_typ
+accumulator_adder_2_DW01_add_9
+                       4000              tsl18fs120_typ
+accumulator_adder_2_DW01_add_10
+                       4000              tsl18fs120_typ
+accumulator_adder_2_DW01_add_11
+                       4000              tsl18fs120_typ
+accumulator_adder_2_DW01_add_12
+                       4000              tsl18fs120_typ
+accumulator_adder_2_DW01_add_13
+                       4000              tsl18fs120_typ
+
+
+Global Operating Voltage = 1.8  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =  56.6729 mW   (16%)
+  Net Switching Power  = 300.0689 mW   (84%)
+                         ---------
+Total Dynamic Power    = 356.7418 mW  (100%)
+
+Cell Leakage Power     =   4.1182 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000          297.0813            0.0000          297.0813  (  83.28%)
+register          55.6329        4.7649e-03        6.5007e+05           55.6383  (  15.60%)
+sequential     5.7756e-02        5.2381e-03        8.8866e+03        6.3003e-02  (   0.02%)
+combinational      0.9795            2.9776        3.4593e+06            3.9605  (   1.11%)
+--------------------------------------------------------------------------------------------------
+Total             56.6702 mW       300.0689 mW     4.1182e+06 pW       356.7431 mW

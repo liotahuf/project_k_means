@@ -1,0 +1,197 @@
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : k_means_top
+Version: N-2017.09-SP3
+Date   : Tue Jun  2 22:54:46 2020
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tsl18fs120_typ   Library: tsl18fs120_typ
+Wire Load Model Mode: enclosed
+
+  Startpoint: u_k_means_core/u_controller/centroid_cnt_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: u_k_means_core/u_new_means_calculation_block/output_reg_reg[89]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  k_means_top        280000                tsl18fs120_typ
+  k_means_core_tc_mode1_rem_mode1_accum_width154_addrWidth9_dataWidth91_centroid_num8_log2_cent_num3_accum_cord_width22_cordinate_width13_count_width10_manhatten_width16_log2_of_point_cnt9_ram_word_len50_reg_amount8_1
+                     280000                tsl18fs120_typ
+  new_means_calculation_block_tc_mode1_rem_mode1_accum_width154_count_width10_addrWidth9_dataWidth91_centroid_num8_cordinate_width13_accum_cord_width22_1
+                     140000                tsl18fs120_typ
+  parsing_dividing   140000                tsl18fs120_typ
+  parsing_dividing_DW_div_7
+                     16000                 tsl18fs120_typ
+  parsing_dividing_add_0_root_add_337_2_DP_OP_289_5616_0
+                     8000                  tsl18fs120_typ
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_k_means_core/u_controller/centroid_cnt_reg[2]/CP (dfcrq4)
+                                                          0.00 #     0.00 r
+  u_k_means_core/u_controller/centroid_cnt_reg[2]/Q (dfcrq4)
+                                                          0.35       0.35 f
+  u_k_means_core/u_controller/cent_cnt[2] (controller_tc_mode1_rem_mode1_accum_width154_addrWidth9_dataWidth91_centroid_num8_log2_cent_num3_accum_cord_width22_cordinate_width13_count_width10_manhatten_width16_log2_of_point_cnt9_ram_word_len50_reg_amount8_1)
+                                                          0.00       0.35 f
+  u_k_means_core/u_new_means_calculation_block/cent_cnt[2] (new_means_calculation_block_tc_mode1_rem_mode1_accum_width154_count_width10_addrWidth9_dataWidth91_centroid_num8_cordinate_width13_accum_cord_width22_1)
+                                                          0.00       0.35 f
+  u_k_means_core/u_new_means_calculation_block/U42/ZN (invbd2)
+                                                          0.10       0.45 r
+  u_k_means_core/u_new_means_calculation_block/U132/ZN (nd03d2)
+                                                          0.08       0.54 f
+  u_k_means_core/u_new_means_calculation_block/U40/ZN (inv0d4)
+                                                          0.09       0.63 r
+  u_k_means_core/u_new_means_calculation_block/U58/Z (bufbd3)
+                                                          0.10       0.73 r
+  u_k_means_core/u_new_means_calculation_block/U24/Z (buffda)
+                                                          0.11       0.84 r
+  u_k_means_core/u_new_means_calculation_block/U254/ZN (aoi22d1)
+                                                          0.08       0.92 f
+  u_k_means_core/u_new_means_calculation_block/U255/ZN (nd04d1)
+                                                          0.14       1.06 r
+  u_k_means_core/u_new_means_calculation_block/U130/Z (buffd7)
+                                                          0.12       1.18 r
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/counter[0] (parsing_dividing)
+                                                          0.00       1.18 r
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/U19/ZN (invbda)
+                                                          0.05       1.23 f
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/U13/ZN (invbdk)
+                                                          0.06       1.28 r
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/b[0] (parsing_dividing_DW_div_7)
+                                                          0.00       1.28 r
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/U163/ZN (inv0da)
+                                                          0.03       1.31 f
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/U251/Z (buffda)
+                                                          0.11       1.42 f
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/U92/ZN (inv0d7)
+                                                          0.04       1.45 r
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/U91/ZN (inv0d7)
+                                                          0.03       1.49 f
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/U1389/ZN (inv0da)
+                                                          0.07       1.55 r
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/U138/ZN (nd02d4)
+                                                          0.23       1.78 f
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/U68/ZN (inv0d4)
+                                                          0.06       1.84 r
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/U67/Z (bufbd7)
+                                                          0.14       1.97 r
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/U1398/ZN (nd02d0)
+                                                          0.08       2.06 f
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/U1400/CN (clk2d2)
+                                                          0.45       2.51 r
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/U678/Z (bufbd4)
+                                                          0.22       2.73 r
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/U2891/ZN (nd02d1)
+                                                          0.08       2.81 f
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/U4526/ZN (nd03d1)
+                                                          0.10       2.91 r
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/U4525/ZN (nr02d1)
+                                                          0.05       2.96 f
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/U1185/ZN (nd02d1)
+                                                          0.07       3.03 r
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/U5681/ZN (nr13d1)
+                                                          0.05       3.08 f
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/U3181/ZN (nr02d1)
+                                                          0.10       3.19 r
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/U3179/ZN (nr02d1)
+                                                          0.07       3.25 f
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/U698/ZN (nd03d1)
+                                                          0.10       3.35 r
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/U2210/ZN (nr02d2)
+                                                          0.03       3.39 f
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/U3838/ZN (nd04d1)
+                                                          0.13       3.51 r
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/add_0_root_add_337_2_DP_OP_289_5616_3/I3[8] (parsing_dividing_add_0_root_add_337_2_DP_OP_289_5616_0)
+                                                          0.00       3.51 r
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/add_0_root_add_337_2_DP_OP_289_5616_3/U2470/ZN (inv0d2)
+                                                          0.08       3.59 f
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/add_0_root_add_337_2_DP_OP_289_5616_3/U2472/ZN (inv0d1)
+                                                          0.06       3.65 r
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/add_0_root_add_337_2_DP_OP_289_5616_3/U4670/Z (xr02d1)
+                                                          0.26       3.91 f
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/add_0_root_add_337_2_DP_OP_289_5616_3/U4669/ZN (oai22d1)
+                                                          0.19       4.10 r
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/add_0_root_add_337_2_DP_OP_289_5616_3/U1936/ZN (inv0d2)
+                                                          0.05       4.14 f
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/add_0_root_add_337_2_DP_OP_289_5616_3/U2261/ZN (oai222d1)
+                                                          0.29       4.44 r
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/add_0_root_add_337_2_DP_OP_289_5616_3/U2510/Z (xr03d2)
+                                                          0.43       4.87 f
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/add_0_root_add_337_2_DP_OP_289_5616_3/U2976/ZN (inv0d2)
+                                                          0.06       4.92 r
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/add_0_root_add_337_2_DP_OP_289_5616_3/U2105/ZN (oai222d2)
+                                                          0.25       5.18 f
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/add_0_root_add_337_2_DP_OP_289_5616_3/U2530/Z (xr03d2)
+                                                          0.28       5.46 r
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/add_0_root_add_337_2_DP_OP_289_5616_3/U2763/ZN (invbd2)
+                                                          0.06       5.52 f
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/add_0_root_add_337_2_DP_OP_289_5616_3/U2036/Z (xr03d2)
+                                                          0.29       5.80 r
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/add_0_root_add_337_2_DP_OP_289_5616_3/U2404/ZN (nd12d1)
+                                                          0.12       5.92 r
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/add_0_root_add_337_2_DP_OP_289_5616_3/U3990/ZN (oai21d1)
+                                                          0.08       6.00 f
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/add_0_root_add_337_2_DP_OP_289_5616_3/U3989/ZN (oai22d1)
+                                                          0.20       6.20 r
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/add_0_root_add_337_2_DP_OP_289_5616_3/U2062/Z (buffd7)
+                                                          0.13       6.33 r
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/add_0_root_add_337_2_DP_OP_289_5616_3/U2061/ZN (inv0d1)
+                                                          0.04       6.37 f
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/add_0_root_add_337_2_DP_OP_289_5616_3/U2058/ZN (nd02d2)
+                                                          0.06       6.43 r
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/add_0_root_add_337_2_DP_OP_289_5616_3/U2059/ZN (nd02d2)
+                                                          0.07       6.50 f
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/add_0_root_add_337_2_DP_OP_289_5616_3/U1949/ZN (invbd4)
+                                                          0.08       6.57 r
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/add_0_root_add_337_2_DP_OP_289_5616_3/U3638/ZN (aoi22d1)
+                                                          0.08       6.65 f
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/add_0_root_add_337_2_DP_OP_289_5616_3/U3637/ZN (aoi31d1)
+                                                          0.18       6.83 r
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/add_0_root_add_337_2_DP_OP_289_5616_3/U3636/Z (xr02d1)
+                                                          0.24       7.07 f
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/add_0_root_add_337_2_DP_OP_289_5616_3/O2[42] (parsing_dividing_add_0_root_add_337_2_DP_OP_289_5616_0)
+                                                          0.00       7.07 f
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/U3/ZN (inv0d2)
+                                                          0.05       7.12 r
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/U862/ZN (nd02d2)
+                                                          0.04       7.16 f
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/U2589/Z (an02d1)
+                                                          0.14       7.30 f
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/DIV_7/quotient[11] (parsing_dividing_DW_div_7)
+                                                          0.00       7.30 f
+  u_k_means_core/u_new_means_calculation_block/parsing_dividing/result_cord_7[11] (parsing_dividing)
+                                                          0.00       7.30 f
+  u_k_means_core/u_new_means_calculation_block/integer_to_fixed_point_and_concatenating/result_cord_7[11] (integer_to_fixed_point_and_concatenating)
+                                                          0.00       7.30 f
+  u_k_means_core/u_new_means_calculation_block/integer_to_fixed_point_and_concatenating/new_centroid[89] (integer_to_fixed_point_and_concatenating)
+                                                          0.00       7.30 f
+  u_k_means_core/u_new_means_calculation_block/U1152/Z (an02d1)
+                                                          0.11       7.41 f
+  u_k_means_core/u_new_means_calculation_block/output_reg_reg[89]/D (dfcrq1)
+                                                          0.00       7.41 f
+  data arrival time                                                  7.41
+
+  clock clk (rise edge)                                   7.50       7.50
+  clock network delay (ideal)                             0.00       7.50
+  u_k_means_core/u_new_means_calculation_block/output_reg_reg[89]/CP (dfcrq1)
+                                                          0.00       7.50 r
+  library setup time                                     -0.09       7.41
+  data required time                                                 7.41
+  --------------------------------------------------------------------------
+  data required time                                                 7.41
+  data arrival time                                                 -7.41
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
