@@ -1,3 +1,4 @@
+tic
 D =0xB;
 D =D+0xC;
 D =D+0xD;
@@ -25,7 +26,7 @@ double_res = double_accum/8;
 double_res_fixe_point =double_res/1024;
 
 %% runnig k means in matlab for input data
-
+tic
 X = zeros (10,7);
 
 for i=11:1:18
@@ -49,6 +50,7 @@ end
 [idx,R] = kmeans(X,[],'Display','iter','EmptyAction','drop','Distance','cityblock','start',C);
 
 R_round =round(R,4);
+toc
 
 %% actual results conversion
 cent_1 = 0xE000
@@ -69,6 +71,6 @@ cent_8_dim_1_bin = cent_8_bin(end-12:end);
 cent_8_dim_1_res = q2dec(cent_8_dim_1_bin,2,10,'bin');
 
 
-
+toc
 
 
